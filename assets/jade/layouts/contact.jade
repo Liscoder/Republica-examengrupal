@@ -1,0 +1,31 @@
+section.contact
+	.container
+		h1.titulo Contáctese con nosotros
+		p Llena este formulario si necesita enviarnos alguna información acerca del contenido del sitio web, su funcionalidad, o si tiene alguna propuesta de información o mejora para el sitio.Así mismo, puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada seccion el cual podrá elegir como destinatario.
+		.formulario.col-md-8
+			+input("Nombres completos")
+			+input("Correo electrónico")
+			+input("Teléfonos")
+			span (Opcional)
+			br
+			.col-md-6
+				h5 Elija un destinatario
+				ul
+					li.fa.fa-circle-o Sugerencia para el sitio web
+					li.fa.fa-circle-o Dirección periodistica
+					li.fa.fa-circle-o Dirección comercial
+					li.fa.fa-circle-o Cartas al director
+					li.fa.fa-circle-o Promociones y productos del diario
+					li.fa.fa-circle-o Archivo periodistico
+			.col-md-6
+				ul
+					li (Ej.funcionamiento y mejora para el sitio)
+					li (Ej. Sugerencia para la nota de prensa)
+					li (Ej. Publcidad en diarios o sitios web)
+					li (Ej. Denuncias, comentarios e impresiones)
+					li (Ej. Promociones, tablet, etc)
+					li (Ej. Ediciones impresas/fotos)
+			+textoarea(Mensaje)
+			.btn.col-md-5 ENVIAR
+
+
