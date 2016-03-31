@@ -1,0 +1,21 @@
+
+body{
+    text-align: center;
+}
+ul{
+padding: 0 250px;
+    li{
+        color:#9B9FA5;
+        float: left;
+        margin-left: 50px;
+        a{
+            font-size: 13px;
+            font-weight: bold;
+            color:#9B9FA5;
+        }
+
+    }
+    li:first-child{
+            list-style: none
+    }
+}

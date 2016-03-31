@@ -1,3 +1,17 @@
+body {
+  text-align: center; }
 
+ul {
+  padding: 0 250px; }
+  ul li {
+    color: #9B9FA5;
+    float: left;
+    margin-left: 50px; }
+    ul li a {
+      font-size: 13px;
+      font-weight: bold;
+      color: #9B9FA5; }
+  ul li:first-child {
+    list-style: none; }
 
 /*# sourceMappingURL=home.css.map */
