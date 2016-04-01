@@ -1,0 +1,25 @@
+footer {
+  background: #E3E3E3;
+  padding: 2%; }
+  footer li {
+    list-style: none;
+    padding: 0; }
+    footer li a {
+      color: grey; }
+  footer hr {
+    boredr: 1px solid black; }
+  footer .contenedor li, footer .contenedor ul {
+    font-family: "PT Sans";
+    font-size: 13px; }
+  footer h3 {
+    font-family: "Open Sans";
+    letter-spacing: -0.06em; }
+  footer .block ul, footer .block li {
+    display: inline-block;
+    font-size: 10px;
+    padding: 1px;
+    text-align: center;
+    font-family: "PT Sans";
+    border-right: 1px solid grey; }
+
+/*# sourceMappingURL=footer.css.map */

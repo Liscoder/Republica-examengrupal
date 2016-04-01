@@ -1,0 +1,70 @@
+#header{
+	padding:3%;
+	.header-social{
+	ul, li{
+		display:inline-block;
+		padding:1%;
+		font-size:11px;
+		a{
+		color:grey;
+		}
+		.fa{
+			font-size:15px;
+			padding:6px;
+		}
+		button{
+			background:#EF4355;
+			color:white;
+			border-radius:5px;
+			border:none;
+			padding-left:10px;
+		}
+		.envelope{
+			width:22px;
+			height:16px;
+		}
+		.fa-facebook{
+				color:#457DA8;
+			}
+		.fa-twitter{
+			color:#55ACEE;
+		}
+		.fa-google-plus{
+			color:#DC503F;
+		}
+		.fa-rss{
+			color:#FF6700;
+		}
+	}
+ }
+}
+.enlace{
+	width:265px;
+	height:65px;
+	border:1px solid grey;
+	border-bottom:2px solid #363A3D;
+	P {
+		text-align:center;
+		font-size:12px;
+		display:block;
+		margin-top:25px;
+	}
+	.title1{
+		background:#344557;
+		color:white;
+		padding:2px;
+		width:160px;
+		font-size:12px;
+		text-align:center;
+		position: relative;
+		top:-64px;
+		margin:auto;
+	}
+}
+.author{
+  border:1px solid grey;
+  border-radius:12px;
+  width:245px;
+  height:65px;
+  text-align:center;
+}
