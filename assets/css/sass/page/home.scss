@@ -1,4 +1,32 @@
+/*TYPOGRAFIA*/
+span{
+    font-size: 5.6rem;
+    font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
+h5{
+    font-family: "Oswald","Helvetica",Arial,sans-serif;
+}
+h5{
+    font-size: 14px;
+    font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+    font-weight: bold;
+}
+h3{
+    font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+    font-weight: bold;
+    font-size:28px;
+}
+
+h6{
+    font-family:"PT Sans","Helvetica",Arial,sans-serif;
+    font-size: 15px;
+    line-height: 130%;
+    }
+
+/*HOME*/
 body{
     text-align: center;
 }
@@ -17,5 +45,61 @@ padding: 0 250px;
     }
     li:first-child{
             list-style: none
+    }
+}
+@mixin imagenes($background-image, $height) {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-image: $background-image;
+    height: $height;
+}
+.img1{
+    @include imagenes(url(../image/img_grid_principal.jpg), 400px);
+}
+.img2{
+    @include imagenes(url(../image/img_grid_secundario.jpg),200px);
+}
+.img3{
+    @include imagenes(url(../image/img_grid_secundario.jpg),200px);
+}
+.img4{
+    @include imagenes(url(../image/img_especiales.jpg) ,200px);
+}
+.img5{
+    @include imagenes(url(../image/img_especiales_aside.jpg) ,200px);
+}
+.banneraside{
+    @include imagenes(url(../image/banner-aside-home.jpg) ,630px);
+}
+.col-md-8, .col-md-5{
+    padding: 20px;
+
+}
+#columnist{
+    img{
+        width: 100%;
+        padding: 20px;
+    }
+}
+#noticias{
+
+    text-align: left;
+    ul{
+        padding: 0px;
+        li{
+            margin-left: 30px;
+            a{
+                margin-left: 5px;
+            }
+        }
+        li:first-child{
+            margin-left: 0px;
+        }
+    }
+    .asid{
+        padding: 10px 0px;
+        border-bottom: 1px solid #CDCDCD;
     }
 }

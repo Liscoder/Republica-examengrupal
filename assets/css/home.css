@@ -1,3 +1,29 @@
+/*TYPOGRAFIA*/
+span {
+  font-size: 5.6rem;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+h5 {
+  font-family: "Oswald","Helvetica",Arial,sans-serif; }
+
+h5 {
+  font-size: 14px;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+  font-weight: bold; }
+
+h3 {
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 28px; }
+
+h6 {
+  font-family: "PT Sans","Helvetica",Arial,sans-serif;
+  font-size: 15px;
+  line-height: 130%; }
+
+/*HOME*/
 body {
   text-align: center; }
 
@@ -13,5 +39,74 @@ ul {
       color: #9B9FA5; }
   ul li:first-child {
     list-style: none; }
+
+.img1 {
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-image: url(../image/img_grid_principal.jpg);
+  height: 400px; }
+
+.img2 {
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-image: url(../image/img_grid_secundario.jpg);
+  height: 200px; }
+
+.img3 {
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-image: url(../image/img_grid_secundario.jpg);
+  height: 200px; }
+
+.img4 {
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-image: url(../image/img_especiales.jpg);
+  height: 200px; }
+
+.img5 {
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-image: url(../image/img_especiales_aside.jpg);
+  height: 200px; }
+
+.banneraside {
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-image: url(../image/banner-aside-home.jpg);
+  height: 630px; }
+
+.col-md-8, .col-md-5 {
+  padding: 20px; }
+
+#columnist img {
+  width: 100%;
+  padding: 20px; }
+
+#noticias {
+  text-align: left; }
+  #noticias ul {
+    padding: 0px; }
+    #noticias ul li {
+      margin-left: 30px; }
+      #noticias ul li a {
+        margin-left: 5px; }
+    #noticias ul li:first-child {
+      margin-left: 0px; }
+  #noticias .asid {
+    padding: 10px 0px;
+    border-bottom: 1px solid #CDCDCD; }
 
 /*# sourceMappingURL=home.css.map */

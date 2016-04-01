@@ -1,0 +1,31 @@
+-var emma = "La actriz Emma Watson fue confirmada por Disney como la protagonista de 'La bella y la bestia' en la version de carne y hueso"
+mixin list
+    ul 
+        li 
+            a(href='#')
+                img(src='assets/image/social_sprite.png')
+        li 
+            a(href='#')
+                img(src='assets/image/ico_comment.png')
+        li 
+            a(href='#') ESPECTACULOS
+        li
+            a(href='#')
+mixin columnLlosa
+        img(src='assets/image/img-columnistas.jpg')
+        p Mario Vargas Llosa
+        h5 Megarenuncia apulpinante
+mixin columnRodrich
+        img(src='assets/image/img_blogueros.jpg')
+        p Augusto Alvarez Rodrich
+        h5 Respuesta a una derrota estridente
+
+mixin noticias(titulo , src)
+        p Hace una 1h 12mins
+        h3= titulo
+            .row
+                .col-md-6
+                    img(src=src)
+                .col-md-10
+                h6= emma
+                +list

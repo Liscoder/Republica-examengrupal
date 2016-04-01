@@ -17,22 +17,73 @@ html(lang='es-PE')
     script(type='text/javascript', src='js/modernizr.custom.68172.js')
     script(type='text/javascript', src='js/respond.js')
     link(rel='stylesheet', type='text/css', href='assets/css/home.css')
+    
   body
-      section(id='portada')
-          .container
-              span Guerra en la municipalidad de lima metropolitana
-              ul 
-                  li
-                      a(href='#')
-                          img(src='assets/image/social_sprite.png')
-                  li
-                      a(href='#')  Hace 12 minutos
-                  li
-                      a(href='#')  POLÍTICA
-              .row
-                  .col-lg-8
-                      img(src='assets/image/img_grid_principal.jpg')
-                  .col-lg-8
-                      img(src='assets/image/img_grid_secundario.jpg')
-                          
+    include ../helpers/mixinhome.jade
+    .container-fluid
+            .col-md-2
+            
+            .col-md-12    
+                section(id='portada')
+                    .container
+                        span Guerra en la municipalidad de lima metropolitana
+                          ul 
+                              li
+                                  a(href='#')
+                                      img(src='assets/image/social_sprite.png')
+                              li
+                                  a(href='#')  Hace 12 minutos
+                              li
+                                  a(href='#')  POLÍTICA
+                section
+                    .container      
+                        .row
+                            .col-md-8
+                                .img1
+                                    h3 JNE impulsará campaña en favor de la aprobacion de la reforma electoral
+                            .col-md-8
+                                .row.img2
+                                    h3 Martin Belaunde Lossio:Empresas vinculadas al empresario contrataron por /3.000millones |FOTOS
+                                .row.img3
+                                    h3 Sub 20: Perú vs Paraguay:bicolor empato 1-1 y pasó a hexagonal final del Sudamericano |VIDEO
+                section(id='columnist')
+                    .container
+                        .row
+                            .col-md-8
+                                .col-md-5
+                                    +columnLlosa
+                                .col-md-5
+                                    +columnRodrich
+                                .col-md-5
+                                    +columnLlosa
+                            .col-md-8
+                                .col-md-5
+                                    +columnRodrich
+                                .col-md-5
+                                    +columnLlosa
+                                .col-md-5
+                                    +columnRodrich
+                section
+                    .container
+                        .row
+                            .col-md-5
+                                .img4
+                                    h4 Mercado de pases 2015
+                                .img4
+                                    h4 Mercado de pases 2015
+                            .col-md-5
+                                .img5
+                                .img5
+                            .col-md-5.banneraside
+                section(id='noticias')
+                    .container
+                        .row
+                            .col-md-10
+                                .asid
+                                    +noticias('Emma Watson protagonizara La bella y la bestia' , src='assets/image/img_news.jpg')
+                                .asid
+                                    +noticias('Roque Benavides respalda proyecto Tía María' , src='assets/image/img_news.jpg')
+                                
+                            .col-md-6
+            .col-md-2
     //escribe tu código html aquí  
