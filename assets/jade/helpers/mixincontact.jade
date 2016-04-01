@@ -3,33 +3,10 @@ mixin input(place)
 		input.form-control(
 			placeholder=place
 		)
+
 mixin textoarea(textoa)
 	.form-group
 		textarea.form-control(
 			placeholder=textoa
 		)
-mixin description(article,imagen,name,title)
-	.col-md-4
-		span Lunes,14 de julio de 2015
-		h4= article
-		.contenedor
-			.col-md-4
-				img.escritor(src=imagen)
-			.col-md-8
-				h5 name
-				h4 title
-mixin columnistas(title1,title2, title3)
-	.row
-		+description("El gol de la muerte","../image/img_author_columnista","LIBROS",title1)
-		+description("Dios ha muerto... tengo las manos cubiertas de sangre","../image/blog_avatar_01.jpg","Mirko Lauer",title2)
-		+description("¿Cuál es tu queso favorito?","../image/img_author_colunista","Aldo Miyashiro",title3)
-mixin escritor1(imagen1,title)
-	.col-md-4
-		.col-md-4
-			img(src=imagen1)
-		.col-md-8
-
-mixin todoscolumnistas(imagen1,imagen2,imagen3)
-	.col-md-4
-		.col-md-5
-			img.escritor(src=imagen1)
+	

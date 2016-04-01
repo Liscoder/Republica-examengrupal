@@ -1,31 +1,61 @@
-section.contact
-	.container
-		h1.titulo Contáctese con nosotros
-		p Llena este formulario si necesita enviarnos alguna información acerca del contenido del sitio web, su funcionalidad, o si tiene alguna propuesta de información o mejora para el sitio.Así mismo, puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada seccion el cual podrá elegir como destinatario.
-		.formulario.col-md-8
-			+input("Nombres completos")
-			+input("Correo electrónico")
-			+input("Teléfonos")
-			span (Opcional)
-			br
-			.col-md-6
-				h5 Elija un destinatario
-				ul
-					li.fa.fa-circle-o Sugerencia para el sitio web
-					li.fa.fa-circle-o Dirección periodistica
-					li.fa.fa-circle-o Dirección comercial
-					li.fa.fa-circle-o Cartas al director
-					li.fa.fa-circle-o Promociones y productos del diario
-					li.fa.fa-circle-o Archivo periodistico
-			.col-md-6
-				ul
-					li (Ej.funcionamiento y mejora para el sitio)
-					li (Ej. Sugerencia para la nota de prensa)
-					li (Ej. Publcidad en diarios o sitios web)
-					li (Ej. Denuncias, comentarios e impresiones)
-					li (Ej. Promociones, tablet, etc)
-					li (Ej. Ediciones impresas/fotos)
-			+textoarea(Mensaje)
-			.btn.col-md-5 ENVIAR
+doctype html
+html(lang='es-PE')
+	head
+		meta(charset='UTF-8')
+		title Contact
+		link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+		script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+		script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+		script(type='text/javascript', src='js/bootstrap.min.js')
+		script(type='text/javascript', src='js/slick.min.js')
+		script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+		script(type='text/javascript', src='js/modernizr.custom.68172.js')
+		script(type='text/javascript', src='js/respond.js')
+		link(rel='stylesheet', type='text/css', href='assets/css/contact.css')
+	body
+		include ../helpers/mixincontact
+		section.contact
+			.container-fluid
+				.col-md-2.publicidad1
+				.col-md-12
+					h1.titulo Contáctese con nosotros
+					p Llena este formulario si necesita enviarnos alguna información acerca del contenido del sitio web, su funcionalidad, o si tiene alguna propuesta de información o mejora para el sitio.Así mismo, puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada seccion el cual podrá elegir como destinatario.
+					.formulario
+						.col-md-10.col-md-offset-3
+							+input("Nombres completos")
+							+input("Correo electrónico")
+							+input("Teléfonos")
+						span.col-md-offset-3 (Opcional)
+						br
+						.col-md-8
+							h5 Elija un destinatario
+							ul
+								li.fa.fa-circle-o  Sugerencia para el sitio web
+								li.fa.fa-circle-o Dirección periodistica
+								li.fa.fa-circle-o Dirección comercial
+								li.fa.fa-circle-o Cartas al director
+								li.fa.fa-circle-o Promociones y productos del diario
+								li.fa.fa-circle-o Archivo periodistico
+						.col-md-8
+							ul
+								li (Ej. Funcionamiento y mejora para el sitio)
+								li (Ej. Sugerencia para la nota de prensa)
+								li (Ej. Publcidad en diarios o sitios web)
+								li (Ej. Denuncias, comentarios e impresiones)
+								li (Ej. Promociones, tablet, etc)
+								li (Ej. Ediciones impresas/fotos)
+						.col-md-10.col-md-offset-3
+							+textoarea(Mensaje)
+						.btn.col-md-5 ENVIAR
+				.col-md-2.publicidad2
+
+	script(src="../assets/js/bootstrap.min.js")
+	script(src="../assets/js/jquery.min.js")
+	script(src="../assets/js/slick.min.js")
 
 

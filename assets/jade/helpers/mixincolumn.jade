@@ -1,0 +1,39 @@
+mixin description(article,imagen,name,title)
+	.col-md-5
+		span Lunes,14 de julio de 2015
+		h4= article
+		.contenedor
+			.col-md-6
+				img.escritor(src=imagen)
+			.col-md-10
+				h5= name
+				h4= title
+mixin columnistas(title1,title2, title3)
+	.row
+		+description("El gol de la muerte","assets/image/img_author_columnista.jpg","LIBROS",title1)
+		+description("Dios ha muerto... tengo las manos cubiertas de sangre","assets/image/blog_avatar_01.jpg","Mirko Lauer",title2)
+		+description("¿Cuál es tu queso favorito?","assets/image/img_author_columnista.jpg","Aldo Miyashiro",title3)
+mixin escritor(imagen,title,tema)
+	.col-md-4
+		.informacion
+			.col-md-6
+				img(src=imagen)
+			.col-md-10
+				h4= title
+				h5= tema
+mixin todoscolumnistas1(imagen1,imagen2,imagen3,imagen4)
+	.row
+		+escritor(imagen1,"Francisco Durand","Tiro al blanco")
+		+escritor(imagen2,"Humberto Campodónico","Cristal de Mira")
+		+escritor(imagen3,"Javier Ágreda", "Jaque Perpetuo")
+		+escritor(imagen4,"Javier Ágreda","Jaque Perpetuo")
+mixin todoscolumnistas2(imagen1,imagen2,imagen3,imagen4)
+	.row
+		+escritor(imagen1,"Francisco Durand","Delito de Opinión")
+		+escritor(imagen2,"Humberto Campodónico","Actualidad Ecnómica - Oscar Dancourt")
+		+escritor(imagen3,"Javier Ágreda", "Miranda externa")
+		+escritor(imagen4,"Javier Ágreda","Defensa")
+mixin filacolumnistas
+	+todoscolumnistas1("assets/image/blog_avatar_02.jpg","assets/image/blog_avatar_02.jpg","assets/image/blog_avatar_02.jpg","assets/image/blog_avatar_02.jpg")
+	+todoscolumnistas2("assets/image/blog_avatar_01.jpg","assets/image/blog_avatar_01.jpg","assets/image/blog_avatar_01.jpg","assets/image/blog_avatar_02.jpg")
+

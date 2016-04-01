@@ -1,24 +1,66 @@
-section.columnista
-	.container
-		h1.titulo Columnista
-		h5 LO ÚLTIMO EN COLUMNISTA
-		+description("Tiro al blanco","Cristal de Mira","Jaque Perpetuo")
-		+description("Claro y directo","Observador", "Chino de mi barrio")
-		+description("Tiro al blanco", " Cristal de Mira", " Jaque Perpetuo")
-		.btn.col-md-3 TODAS LAS COLUMNAS
-section.all
-	.container
-		h5 TODOS LOS COLUMNISTAS 
-		nav
-			ul
-				li.active TODOS
-				li A B C
-				li D E F
-				li G H I
-				li J K L
-				li M N O
-				li P Q R S
-				li T U V
-				li W X Y Z
-		
-		
+doctype html
+html(lang='es-PE')
+	head
+		meta(charset='UTF-8')
+		title Columnistas
+		link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+		script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+		script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+		script(type='text/javascript', src='js/bootstrap.min.js')
+		script(type='text/javascript', src='js/slick.min.js')
+		script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+		script(type='text/javascript', src='js/modernizr.custom.68172.js')
+		script(type='text/javascript', src='js/respond.js')
+		link(rel='stylesheet', type='text/css', href='assets/css/contact.css')
+	body
+		include ../helpers/mixincolumn
+		section.columnista
+			.container
+				h1.titulo Columnista
+				h5 LO ÚLTIMO EN COLUMNISTA
+					img(src="assets/image/double-arrow-bottom.png", alt="all the columns")
+				+columnistas("Claro y directo","Observador", "Chino de mi barrio")
+				+columnistas("Tiro al blanco","Cristal de Mira","Jaque Perpetuo")
+				+columnistas("Claro y directo","Observador", "Chino de mi barrio")
+				+columnistas("Tiro al blanco", " Cristal de Mira", " Jaque Perpetuo")
+				.btn.col-md-3 TODAS LAS COLUMNAS
+		section.all
+			.container
+				h5 TODOS LOS COLUMNISTAS
+					img(src="assets/image/double-arrow-bottom.png", alt="all the columns") 
+				nav
+					ul.slider(id="abc-slick")
+						li.active 
+							a TODOS
+						li 
+							a A B C
+						li 
+							a D E F
+						li 
+							a G H I
+						li 
+							a J K L
+						li 
+							a M N O
+						li 
+							a P Q R S
+						li 
+							a T U V
+						li 
+							a W X Y Z
+				+filacolumnistas
+				+filacolumnistas
+				+filacolumnistas
+				+filacolumnistas
+				+filacolumnistas
+				+filacolumnistas
+				+filacolumnistas
+	script(src="../assets/js/bootstrap.min.js")
+	script(src="../assets/js/jquery.min.js")
+	script(src="../assets/js/slick.min.js")
+	script(src="../assets/js/columnista.js")
