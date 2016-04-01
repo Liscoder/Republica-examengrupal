@@ -1,0 +1,41 @@
+.contact{
+	.formulario{
+		.float-right{
+		float:right;
+		padding-right:0;
+		padding-top:30px;
+		ul{
+			list-style:none;
+			text-align:right;
+			font-size:14px;
+			}
+		}
+		.float-left{
+			float:left;
+			ul{
+				list-style:none;
+				text-align:left;
+				padding-left:0;
+				.fa{
+				display:block;
+				line-height:18px;
+				}
+			}
+		}
+	}
+}
+.contact{
+	input,textarea{
+		background-color:#eeeeee;
+	}
+}
+.contact{
+	textarea{
+		padding-bottom:8%;
+	}
+}
+.enviar{
+	background:black;
+	color:white;
+	padding:1%;
+}

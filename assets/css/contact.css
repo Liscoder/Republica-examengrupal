@@ -1,3 +1,30 @@
+.contact .formulario .float-right {
+  float: right;
+  padding-right: 0;
+  padding-top: 30px; }
+  .contact .formulario .float-right ul {
+    list-style: none;
+    text-align: right;
+    font-size: 14px; }
+.contact .formulario .float-left {
+  float: left; }
+  .contact .formulario .float-left ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0; }
+    .contact .formulario .float-left ul .fa {
+      display: block;
+      line-height: 18px; }
 
+.contact input, .contact textarea {
+  background-color: #eeeeee; }
+
+.contact textarea {
+  padding-bottom: 8%; }
+
+.enviar {
+  background: black;
+  color: white;
+  padding: 1%; }
 
 /*# sourceMappingURL=contact.css.map */

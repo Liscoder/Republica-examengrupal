@@ -32,26 +32,27 @@ html(lang='es-PE')
 							+input("Teléfonos")
 						span.col-md-offset-3 (Opcional)
 						br
-						.col-md-8
-							h5 Elija un destinatario
-							ul
-								li.fa.fa-circle-o  Sugerencia para el sitio web
-								li.fa.fa-circle-o Dirección periodistica
-								li.fa.fa-circle-o Dirección comercial
-								li.fa.fa-circle-o Cartas al director
-								li.fa.fa-circle-o Promociones y productos del diario
-								li.fa.fa-circle-o Archivo periodistico
-						.col-md-8
-							ul
-								li (Ej. Funcionamiento y mejora para el sitio)
-								li (Ej. Sugerencia para la nota de prensa)
-								li (Ej. Publcidad en diarios o sitios web)
-								li (Ej. Denuncias, comentarios e impresiones)
-								li (Ej. Promociones, tablet, etc)
-								li (Ej. Ediciones impresas/fotos)
 						.col-md-10.col-md-offset-3
-							+textoarea(Mensaje)
-						.btn.col-md-5 ENVIAR
+							.float-left.col-md-7
+								h5 Elija un destinatario
+								ul
+									li.fa.fa-circle-o  Sugerencia para el sitio web
+									li.fa.fa-circle-o Dirección periodistica
+									li.fa.fa-circle-o Dirección comercial
+									li.fa.fa-circle-o Cartas al director
+									li.fa.fa-circle-o Promociones y productos del diario
+									li.fa.fa-circle-o Archivo periodistico
+							.float-right.col-md-9
+								ul
+									li (Ej. Funcionamiento y mejora para el sitio)
+									li (Ej. Sugerencia para la nota de prensa)
+									li (Ej. Publcidad en diarios o sitios web)
+									li (Ej. Denuncias, comentarios e impresiones)
+									li (Ej. Promociones, tablet, etc)
+									li (Ej. Ediciones impresas/fotos)
+						.col-md-10.col-md-offset-3
+							+textoarea("Mensaje")
+						.btn.enviar.col-md-4.col-md-offset-6 ENVIAR
 				.col-md-2.publicidad2
 
 	script(src="../assets/js/bootstrap.min.js")
