@@ -1,3 +1,13 @@
+/*VARIABLES*/
+.color-red{
+    color:#8C0000;
+}
+.color-red2{
+    color:#C00101;
+}
+.color-gris{
+    color:#F4F5F7;
+}
 /*TYPOGRAFIA*/
 span{
     font-size: 5.6rem;
@@ -6,7 +16,7 @@ span{
     text-transform: uppercase;
 }
 
-h5{
+h4{
     font-family: "Oswald","Helvetica",Arial,sans-serif;
 }
 h5{
@@ -35,9 +45,10 @@ padding: 0 250px;
     li{
         color:#9B9FA5;
         float: left;
-        margin-left: 50px;
+        margin-left: 48px;
+         font-size: 13px;
         a{
-            font-size: 13px;
+           
             font-weight: bold;
             color:#9B9FA5;
         }
@@ -49,6 +60,7 @@ padding: 0 250px;
 }
 @mixin imagenes($background-image, $height) {
     padding: 20px;
+    position: relative;
     background-size: cover;
     background-position: center;
     color: white;
@@ -56,13 +68,13 @@ padding: 0 250px;
     height: $height;
 }
 .img1{
-    @include imagenes(url(../image/img_grid_principal.jpg), 400px);
+    @include imagenes(url(../image/img_grid_principal.jpg), 470px);
 }
 .img2{
-    @include imagenes(url(../image/img_grid_secundario.jpg),200px);
+    @include imagenes(url(../image/img_grid_secundario.jpg),230px);
 }
 .img3{
-    @include imagenes(url(../image/img_grid_secundario.jpg),200px);
+    @include imagenes(url(../image/img_grid_especiales.jpg),230px);
 }
 .img4{
     @include imagenes(url(../image/img_especiales.jpg) ,200px);
@@ -71,7 +83,7 @@ padding: 0 250px;
     @include imagenes(url(../image/img_especiales_aside.jpg) ,200px);
 }
 .banneraside{
-    @include imagenes(url(../image/banner-aside-home.jpg) ,630px);
+    @include imagenes(url(../image/banner-aside-home.jpg) ,720px);
 }
 .col-md-8, .col-md-5{
     padding: 20px;
@@ -101,5 +113,190 @@ padding: 0 250px;
     .asid{
         padding: 10px 0px;
         border-bottom: 1px solid #CDCDCD;
+        img{
+            width: 100%;
+        }
+    }
+
+}
+.portada{
+    padding:0px 0px 10px 0px;
+}
+
+#port{
+    h3{
+      position: absolute;
+    bottom: -2px;
+    left: 14px;
+    text-align: left;
+
+    }
+}
+.noticiasvariado{
+
+border: 1px solid #CDCDCD;
+padding: 40px 0px 40px 0px;
+margin-bottom: 30px;
+}
+.img4, .img5{
+    h4{
+    position: absolute;
+    bottom: -2px;
+    left: 14px;
+    text-align: left;
+
+    }
+     .color-red2{
+        top: -27px;
+        position: absolute;
+    }
+    .subt{
+        color: black;
+        position: absolute;
+            bottom: -49px;
+    font-size: 14px;
+    }
+}
+.aweita{
+    text-align: center;
+    border: 1px solid #CDCDCD;
+}
+.suscribete{
+    background-image: url(../image/border_portada.gif);
+    background-size: cover;
+    background-repeat: repeat-x;
+    
+    text-align: center;
+    border: 1px solid #CDCDCD;
+    padding: 20px;
+    img{
+        position: absolute;
+        left: 150px;
+    }
+    .formwhite{
+        padding:50px 40px 20px 40px;
+        background-color: white;
+        input{
+              border-radius: 4px;
+            border: 1px solid #CDCDCD; 
+            background-color:#F4F5F7;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+}
+.suscribir{
+    background-color: #C00101;
+    padding: 5px 60px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
+   
+}
+.aweita{
+    padding: 30px 10px 0px 30px;
+    .aweitanoticeimg{
+        float: left;
+        img{
+            width: 100%;
+        }
+    }
+    .aweitanotice{
+        padding: 5px;
+        text-align: left;
+    }
+    img:hover{
+        background-color:  #CDCDCD; 
+        padding: 5px;
+    }
+    .linkaweita{
+        margin: 0px 80px;
+        height: 5px;
+        background-color: pink;
+    }
+}
+ .title{
+    text-align: center;
+    height: 10px;
+    background-size: cover;
+    background-repeat: repeat;
+    background-image: url(../image/border_portada.gif);}
+.box-title{
+
+    @extend .title;
+    color: white;
+    height: 25px;
+    margin: 0px 100px;
+    h4{
+        font-size: 14px;
+    }
+    
+}
+.fotos{
+    img{
+        width: 100%;
+    }
+}
+.fotosdeport{
+    font-size: 14px;
+    img{
+       padding: 6px;
+
+       float: left; 
+    }
+    .asas{
+            padding: 0px 50px 0px 0px;
+
+    }
+
+}
+.especiales{
+    text-align: center;
+    img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    p{
+      width: 90%;
+    margin-left: 9px;
+    text-align: center;
+    position: absolute;
+    margin-top: -70px;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.8;
+    color: black;
+    font-weight: bold;
+   
+    }
+    .descripcion{
+        p{
+            text-align: center;
+        }
+    }
+
+}
+ .carlincatura{
+    text-align: center;
+        img{
+            padding-bottom: 50px;
+            border-bottom: 1px solid #cdcdcd;
+            width: 100%;
+        }
+            .color-red2{
+            margin-top: -20px;}
+        
+    }
+.bloguers{
+    h4{
+        text-align: center;
+    }
+    border-bottom: 1px solid #cdcdcd;
+}
+.edicion{
+    text-align: left;
+    img{
+        width: 100%;
     }
 }

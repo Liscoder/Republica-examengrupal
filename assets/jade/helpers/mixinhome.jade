@@ -1,4 +1,6 @@
 -var emma = "La actriz Emma Watson fue confirmada por Disney como la protagonista de 'La bella y la bestia' en la version de carne y hueso"
+-var zenaida="Zeniada condori Contretas Arequipa Pra el rpesidente de la Compañia de Minas Buenaventira,Roque Benavides , el proyecto Tia Maria ,que promueve Southrm Perú,ya debe.."
+-var cristiano="Despues de la pesima actitud de Cristiano Ronaldo,al agredir a Edimar en el partido del cuadro madridista contra el Cordoba, el Comite de Competicion ha llegado a la.."
 mixin list
     ul 
         li 
@@ -20,12 +22,66 @@ mixin columnRodrich
         p Augusto Alvarez Rodrich
         h5 Respuesta a una derrota estridente
 
-mixin noticias(titulo , src)
+mixin noticias(titulo , src, h6)
         p Hace una 1h 12mins
         h3= titulo
-            .row
+        .row
                 .col-md-6
                     img(src=src)
                 .col-md-10
-                h6= emma
-                +list
+                    if h6==0
+                        h6= emma
+                        +list
+                    else if h6==1
+                        h6= zenaida
+                         +list
+                    else
+                        h6= cristiano
+                         +list
+mixin noticefour
+                                .asid
+                                    +noticias('Emma Watson protagonizara La bella y la bestia' , src='assets/image/img_news.jpg','0')
+                                .asid
+                                    +noticias('Roque Benavides respalda proyecto Tía María' , src='assets/image/thumb-post-image.jpg','1')
+                                 .asid
+                                    +noticias('Emma Watson protagonizara La bella y la bestia' , src='assets/image/img_news.jpg','0')
+                                .asid
+                                    +noticias('Roque Benavides respalda proyecto Tía María' , src='assets/image/sociedad-image--thumb-01.jpg','h6')
+mixin aweita(strong)
+    .aw
+        if strong==0
+                .aweitanoticeimg
+                    img(src='assets/image/img_aweita.jpg')
+                .aweitanotice
+                    strong Juan Román Riquelme, el adiós al 'Último 10' de Argentina
+        else
+                .aweitanoticeimg
+                    img(src='assets/image/img_aweita.jpg')
+                .aweitanotice
+                    strong Lewis Caarroll:un día como hoy nació el autor de 'Alicia en el'
+mixin titulo(h4)
+    .title
+        .box-title
+            h4= h4
+mixin blog(p)
+        .row
+            .col-md-4
+                img(src='assets/image/img_blogueros.jpg')
+            .col-md-12
+                if p==0
+                    a(href='#') Augusto Álvarez Rodrich
+                    p Charlie Hebdo,historia que no debe repetirse
+                else if p==1
+                    a(href='#') Ya lo pasado,PASADO
+                    p El único pulpín es Humala
+                else
+                    a(href='#') Augusto Álvarez Rodrich
+                    p Dios ha muerto..tengo las manos
+mixin notic(h4 , p , src )
+    .row
+        .col-md-7 
+            img(src=src)
+        .col-md-9
+            h4=h4
+            p(class='color-red2')=p
+
