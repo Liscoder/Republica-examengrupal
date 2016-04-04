@@ -27,4 +27,16 @@
   color: white;
   padding: 1%; }
 
+.contact .btn {
+  margin-bottom: 10px; }
+
+.contact .publicidad1 {
+  background: url(../image/banner-aside-home.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px; }
+.contact .publicidad2 {
+  background: url(../image/banner-aside-home.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px; }
+
 /*# sourceMappingURL=contact.css.map */

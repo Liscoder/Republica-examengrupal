@@ -1,4 +1,4 @@
-.blog .arrow {
+body .arrow {
   margin-left: 20px; }
 
 .blog .article {
@@ -33,5 +33,14 @@
 
 .text-left {
   text-align: left; }
+
+.blog .publicidad1 {
+  background: url(../image/banner-aside-home.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px; }
+.blog .publicidad2 {
+  background: url(../image/banner-aside-home.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px; }
 
 /*# sourceMappingURL=blog.css.map */

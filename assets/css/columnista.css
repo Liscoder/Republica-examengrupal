@@ -73,4 +73,13 @@ body .arrow {
       padding: 1%;
       border-radius: 10px; }
 
+.columnista .publicidad1 {
+  background: url(../image/banner-aside-home.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px; }
+.columnista .publicidad2 {
+  background: url(../image/banner-aside-home.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px; }
+
 /*# sourceMappingURL=columnista.css.map */
