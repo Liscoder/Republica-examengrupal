@@ -19,20 +19,22 @@ html(lang='es-PE')
 		link(rel='stylesheet', type='text/css', href='assets/css/blog.css')
 	body
 		include ../helpers/mixinblog
+		include ../commons/header
 		section.blog
 			.container-fluid
 				.col-md-2.publicidad1
 				.col-md-12
 					h1.titulo Blogs
 					h5 LO ÚLTIMO EN BLOG
-						img(src="assets/image/double-arrow-bottom.png", alt="")
-				+articulos
-				+articulos
-				+articulos
-				+bloggers("LIBROS","Ya lo pasado, PASADO","Décimas Cosas")
+						img.arrow(src="assets/image/double-arrow-bottom.png", alt="")
+					+articulos
+					+articulos
+					+articulos
+					+bloggers("LIBROS","Ya lo pasado, PASADO","Décimas Cosas")
 				.btn.columnas TODAS LAS COLUMNAS
 
 				.col-md-2.publicidad2
+		include ../commons/footer
 	script(src="../assets/js/bootstrap.min.js")
 	script(src="../assets/js/jquery.min.js")
 	script(src="../assets/js/slick.min.js")

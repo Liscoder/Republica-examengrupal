@@ -1,26 +1,36 @@
 mixin description(article,imagen,name,title)
-	.col-md-5
+	.col-md-5.text-center.portafolio
+		span Lunes,14 de julio de 2015
+		h4.article= article
+		.contenedor
+			.col-md-5
+				img.escritor(src=imagen)
+			.col-md-10.text-left.personaje
+				h5= name
+				h4.titulo= title
+mixin description2(article,imagen,name,title)
+	.col-md-5.text-center.portafolio
 		span Lunes,14 de julio de 2015
 		h4= article
 		.contenedor
-			.col-md-6
+			.col-md-5
 				img.escritor(src=imagen)
-			.col-md-10
+			.col-md-10.text-left
 				h5= name
-				h4= title
+				h4.titulo= title
 mixin columnistas(title1,title2, title3)
 	.row
 		+description("El gol de la muerte","assets/image/img_author_columnista.jpg","LIBROS",title1)
-		+description("Dios ha muerto... tengo las manos cubiertas de sangre","assets/image/blog_avatar_01.jpg","Mirko Lauer",title2)
+		+description2("Dios ha muerto... tengo las manos cubiertas de sangre","assets/image/blog_avatar_01.jpg","Mirko Lauer",title2)
 		+description("¿Cuál es tu queso favorito?","assets/image/img_author_columnista.jpg","Aldo Miyashiro",title3)
 mixin escritor(imagen,title,tema)
-	.col-md-4
-		.informacion
+	.col-md-4.text-center.portafolio
+		.informacion.contenedor
 			.col-md-6
-				img(src=imagen)
-			.col-md-10
+				img.escritor(src=imagen)
+			.col-md-10.text-left
 				h4= title
-				h5= tema
+				h5.titulo= tema
 mixin todoscolumnistas1(imagen1,imagen2,imagen3,imagen4)
 	.row
 		+escritor(imagen1,"Francisco Durand","Tiro al blanco")

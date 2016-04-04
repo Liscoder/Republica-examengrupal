@@ -1,3 +1,37 @@
+.blog .arrow {
+  margin-left: 20px; }
 
+.blog .article {
+  margin-bottom: 30px; }
+.blog .portafolio {
+  border: 2px solid #e2e2e2;
+  height: 200px;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+  .blog .portafolio .contenedor {
+    background-color: #e2e6e9;
+    height: 85px;
+    width: 100%;
+    padding-top: 8px;
+    vertical-align: bottom; }
+    .blog .portafolio .contenedor img {
+      border: 2px solid white;
+      width: 100%; }
+
+.blog h4 {
+  font-weight: bold;
+  color: black; }
+
+.blog .titulo {
+  color: #667885; }
+
+.blog span {
+  font-size: 12px; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
 
 /*# sourceMappingURL=blog.css.map */
