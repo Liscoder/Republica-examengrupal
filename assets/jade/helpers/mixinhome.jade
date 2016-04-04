@@ -7,12 +7,12 @@ mixin list
             a(href='#')
                 img(src='assets/image/social_sprite.png')
         li 
-            a(href='#')
+            a(href='#' class='comentario')
                 img(src='assets/image/ico_comment.png')
         li 
-            a(href='#') ESPECTACULOS
+            a(href='#') ESPECTÁCULOS
         li
-            a(href='#')
+            a(href='#') YT
 mixin columnLlosa
         img(src='assets/image/img-columnistas.jpg')
         p Mario Vargas Llosa
@@ -31,13 +31,13 @@ mixin noticias(titulo , src, h6)
                 .col-md-10
                     if h6==0
                         h6= emma
-                        +list
+                            +list
                     else if h6==1
                         h6= zenaida
-                         +list
+                            +list
                     else
                         h6= cristiano
-                         +list
+                            +list
 mixin noticefour
                                 .asid
                                     +noticias('Emma Watson protagonizara La bella y la bestia' , src='assets/image/img_news.jpg','0')
@@ -84,4 +84,3 @@ mixin notic(h4 , p , src )
         .col-md-9
             h4=h4
             p(class='color-red2')=p
-

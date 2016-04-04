@@ -19,7 +19,9 @@ html(lang='es-PE')
     link(rel='stylesheet', type='text/css', href='assets/css/home.css')
     
   body
+    
     include ../helpers/mixinhome.jade
+    
     .container-fluid
             .col-md-2
             
@@ -27,27 +29,30 @@ html(lang='es-PE')
                 section(id='portada')
                     .container
                         span Guerra en la municipalidad de lima metropolitana
-                          ul 
-                              li
-                                  a(href='#')
-                                      img(src='assets/image/social_sprite.png')
-                              li
-                                  a(href='#')  Hace 12 minutos
-                              li
-                                  a(href='#')  POLÍTICA
+                        ul 
+                            li
+                                a(href='#')
+                                    img(src='assets/image/social_sprite.png')
+                            li
+                                a(href='#')  Hace 12 minutos
+                            li
+                                a(href='#')  POLÍTICA
                 section(id='port')
                     .container      
                         .row
                             .col-md-8
                                 .img1
-                                    h3 JNE impulsará campaña en favor de la aprobacion de la reforma electoral
+                                    .shadow
+                                        h3 JNE impulsará campaña en favor de la aprobacion de la reforma electoral
                             .col-md-8
                                 .portada
                                     .row.img2
-                                        h3 Martin Belaunde Lossio:Empresas vinculadas al empresario contrataron por /3.000millones |FOTOS
+                                        .shadow
+                                            h3(class='fs28') Martin Belaunde Lossio:Empresas vinculadas al empresario contrataron por /3.000millones |FOTOS
                                  .portada
                                     .row.img3
-                                        h3 Sub 20: Perú vs Paraguay:bicolor empato 1-1 y pasó a hexagonal final del Sudamericano |VIDEO
+                                        .shadow
+                                            h3(class='fs28') Sub 20: Perú vs Paraguay:bicolor empato 1-1 y pasó a hexagonal final del Sudamericano |VIDEO
                 section(id='columnist')
                     .container
                         .row
@@ -68,35 +73,45 @@ html(lang='es-PE')
                 section
                     .container
                         .row
-                            .col-md-5
-                                .noticiasvariado
-                                    .img4
-                                        h4(class='color-red2') Mercado de Pases 2015
-                                        h4 Mercado de pases 2015: altas, bajas y rumores de los equipos peruanos
-                                        h4(class='subt') Todo sobre 
-                                            strong Mercado de Pases 2015
-                                 .noticiasvariado
-                                    .img4
-                                        h4(class='color-red2') Régimen laboral juvenil
-                                        h4  ¿Podrá el Real Madrid conseguir la "Undécima"?
-                                        h4(class='subt') Todo sobre 
-                                            strong Régimen laboral juvenil
-                            .col-md-5
-                                 .noticiasvariado
-                                    .img5
-                                        h4(class='color-red2') Champions League
-                                        h4 Ollanta Humala: Los que han perdido,más allá de tambores y panderetas,son 2 millones de jovénes |
-                                            a(href='#') VIDEO
-                                        h4(class='subt') Todo sobre 
-                                            strong Champions League
-                                 .noticiasvariado
-                                    .img5
-                                        h4(class='color-red2') Super Bowl
-                                        h4 Super Bowl XLIX: New England Patriots se consegró campeón la NFL al ganar 28-24 a Seahawks 
-                                             a(href='#') VIDEO
-                                        h4(class='subt') Todo sobre 
-                                            strong Super Bowl
-                            .col-md-6.banneraside
+                            .col-lg-10
+                                .row
+                                    .col-lg-8
+                                        .noticiasvariado
+                                            h4(class='color-red2') 
+                                                strong Mercado de Pases 2015
+                                            .img4
+                                                .shadow
+                                                    h4 Mercado de pases 2015: altas, bajas y rumores de los equipos peruanos
+                                            h4(class='subt') Todo sobre 
+                                                strong Mercado de Pases 2015
+                                         .noticiasvariado
+                                            h4(class='color-red2') 
+                                                strong Champions League
+                                            .img4
+                                                .shadow
+                                                    h4 ¿Podrá el Real Madrid conseguir la "Undécima"?
+                                            h4(class='subt') Todo sobre 
+                                                strong Régimen laboral juvenil
+                                    .col-lg-8
+                                         .noticiasvariado
+                                            h4(class='color-red2') 
+                                                strong Régimen laboral juvenil
+                                            .img5
+                                                .shadow
+                                                    h4 Ollanta Humala: Los que han perdido,más allá de tambores y panderetas,son 2 millones de jovénes |
+                                                        a(href='#') VIDEO
+                                            h4(class='subt') Todo sobre 
+                                                strong Champions League
+                                         .noticiasvariado
+                                            h4(class='color-red2') 
+                                                strong Super Bowl
+                                            .img5
+                                                .shadow
+                                                    h4 Super Bowl XLIX: New England Patriots se consegró campeón la NFL al ganar 28-24 a Seahawks 
+                                                        a(href='#') VIDEO
+                                            h4(class='subt') Todo sobre 
+                                                strong Super Bowl
+                            .col-lg-6.banneraside
 
                 section(id='noticias')
                     .container
@@ -120,12 +135,14 @@ html(lang='es-PE')
 
                                         a(href='#' class='suscribir') Suscribirse
                                 .aweita
-                                    img(src='assets/image/logo_aweita.jpg')
+                                    a(href='#')
+                                        img(src='assets/image/logo_aweita.jpg' class='logo')
                                     
                                     +aweita('0')
                                     +aweita('strong')
                                     +aweita('0')
                                     +aweita('strong')
+                                    br
                                     p Más en 
                                         a(href='#') Aweita.pe
                                     .linkaweita
