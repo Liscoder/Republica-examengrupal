@@ -10,71 +10,136 @@ html
 		link(rel="stylesheet" href="assets/css/dist/bootstrap-theme.min.css")
 		link(rel="stylesheet" href="assets/css/dist/slick.css")
 		link(rel="stylesheet" href="assets/css/dist/slick-theme.css")
+		link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700")
+		link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700")
 		link(rel="stylesheet" href="assets/css/dist/font-awesome.min.css")
 		link(rel="stylesheet" href="assets/css/header.css")
 	body
-		section#header
-			header
-				.container
-					.row
-						.col-md-16
-							img(src="assets/image/banner_top.jpg")
-				.container
-					.header-social
-						.row
-								ul
-									li
-										a(href="http://www.libero.pe/") LIBERO.PE
-									li
-										a(href="http://www.elpopular.pe/") ELPOPULAR.PE
-									li
-										a(href="http://fundacionmohme.org") FUNDACIÓN GUSTAVO MOHME LLONA
-									button.pull-right SUSCRÍBETE AL BOLETÍN
+		header
+			.container
+				.row
+					img.first(src="assets/image/banner_top.jpg")
+				.row.primerafila
+					ul.enlaces.col-md-8
+						li
+							a(href="#") LIBERO.PE
+						li
+							a(href="#") ELPOPULAR.PE
+						li
+							a(href="#") FUNDACIÓN GUSTAVO MOHME LLONA
+					.col-md-8.text-right
+						ul.list-inline
+							li
+								a(href="#") SUSCRIBETE AL BOLETÍN
+							li
+								a(href="#")
 									i.fa.fa-facebook
+							li
+								a(href="#")
 									i.fa.fa-twitter
+							li
+								a(href="#")
 									i.fa.fa-google-plus
-									img.envelope(src="assets/image/sprites/ico-email.png")
+							li
+								a(href="#")
+									i.fa.fa-envelope
+							li
+								a(href="#")
 									i.fa.fa-rss
-									button.search buscar
-									i.fa.fa-search 
-				.container
-					.cont-header
-						.row
-							.col-md-5
-								img.republica(src="assets/image/logo-la-republica.jpg")
-							.col-md-5
-								.enlace
-									p TODO SOBRE LA CHAMPIONS LEAGUE
-									.title1 ESPECIAL DE FÚTBOL
-							.col-md-5
-								img.editorial(src="assets/image/img_editorial_text.jpg")
-								.author
-									p La corrupción, los orígenes
-									p por: Gustavo Mohme Llona
-									img.horizont.pull-right(src="assets/image/img_author.jpg")
-				.container#politics
-					.nav-republica
-						ul.menu-rep
+						form
+							a(href="#")
+								span BUSCAR
+								i.fa.fa-search
+		section.dos
+			.container
+				.row(style="margin-top:40px;margin-bottom:13px;")
+					.col-md-5
+						img.republica(src="assets/image/logo-la-republica.jpg")
+					.col-md-6
+						.nacionalismo
+							span ESPECIAL DE FÚTBOL
+							.league
+								h3 TODO SOBRE LA CHAMPIONS LEAGUE
+					.col-md-5
+						.gustavo
+							img(src="assets/image/img_editorial_text.jpg").logotype
+							.corrupcion
+								h3 La corrupción , los orígenes
+								p por: Gustavo Mohme Llona
+							img(src="assets/image/img_author.jpg").author.pull-right
+		section.navbar
+			.container
+				.row
+					ul.list-inline.nav
+						li
+							a(href="#") POLITICA
+						li
+							a(href="#") ECONOMÍA
+						li
+							a(href="#") SOCIEDAD
+						li
+							a(href="#") ELECC.REGIONALES
+						li
+							a(href="#") DEPORTES
+						li
+							a(href="#") CHAMPIONS.L
+						li
+							a(href="#") ESPESTÁCULOS
+						li
+							a(href="#") ED.EMPRESA
+						li
+							a(href="#") REGIONALES
+						li
+							a(href="#") MÁS SECCIONES
+					.dia
+						ul.list-inline.navdos
 							li
-								a(href="#") POLÍTICA
+								span.temas
+									a(href="#") TEMAS DEL DÍA
 							li
-								a(href="#") ECONOMÍA
+								a(href="#")
+									i.fa.fa-angle-left
+									span Globos de oro
 							li
-								a(href="#") SOCIEDAD
+								a(href="#")
+									i.fa.fa-circle
+									span Youtube
 							li
-								a(href="#") ELECC.REGIONALES
+								a(href="#")
+									i.fa.fa-circle
+									span PNP
 							li
-								a(href="#") DEPORTES
+								a(href="#")
+									i.fa.fa-circle
+									span Charlie Hebdo
 							li
-								a(href="#") CHAMPIONS L.
+								a(href="#")
+									i.fa.fa-circle
+									span FC Barcelona
 							li
-								a(href="#") ESPECTÁCULOS
+								a(href="#")
+									i.fa.fa-circle
+									span Alianza Lima
 							li
-								a(href="#") ED.IMPRESA
+								a(href="#")
+									i.fa.fa-circle
+									span Balon de oro
 							li
-								a(href="#") REGIONALES
+								a(href="#")
+									i.fa.fa-circle 
+									span Alianza Lima
 							li
-								a(href="#") MÁS SECCIONES
-				.container
-					img(src="assets/image/banner-header.jpg")
+								a(href="#")
+									span Balon
+									i.fa.fa-angle-right
+					img.banner2(src="assets/image/banner-header.jpg")
+
+script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+
+
+
+
+
+
+
 				
