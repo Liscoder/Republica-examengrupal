@@ -1,31 +1,65 @@
 footer{
+	padding-top: 18px;
+	padding-bottom:10px;
 	background:#E3E3E3;
-	padding:2%;
+	font-family:"PT Sans" , Arial ;
+	.primero{
+		img{
+		padding-top: 60px;
+		}
+		h3{
+		font-size: 19px;
+		font-weight:bolder;
+		}
+		ul{
+			margin:0px;
+			padding:0px;
+			&:nth-child(4){
+			margin-top: 11px;
+			font-size:13px;
+			}
+			li{
+			list-style:none;
+			font-size:5px;
+			
+				a{
+				color:black;
+				text-decoration:none;
+				}
+			}
+		}
+	}
+.aside{
+border-left: 1px solid #FFFFFF;
+padding-left: 12px;
+}
+		.col-md-4{
+			font-size:13px;
+			ul{
+				li{
+					list-style:none;
+					a{
+					color:black;
+					text-decoration:none;
+					}
+				}
+			}
+		}
+}
+.comentarist{
 	li{
 		list-style:none;
-		
+		border-right: 1px solid #787878;
+		display:inline-block;
+		font-size:11px;
+		padding-right: 6px ;
 		a{
-		color:grey;
+		text-decoration:none;
+		color:#A4A4A4;
 		}
 	}
-	hr{
-		boredr:1px solid black;
-	}
-	.contenedor{
-		li, ul{
-		font-size:13px;
-		}
-	}
-	h3{
-		letter-spacing: -0.06em ;
-	}
-	.block{
-	ul,li{
-	display:inline-block;
-	font-size:10px;
-	padding:1px;
-	text-align:center;
-	border-right: 1px solid grey;
-	}
 }
+hr{
+border-top: 1px solid #FFFFFF;
 }
+
