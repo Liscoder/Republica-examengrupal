@@ -1,5 +1,6 @@
-/*VARIABLES*/
-.color-red{
+#home{
+    text-align: center;
+    .color-red{
     color:#8C0000;
 }
 .color-red2{
@@ -8,8 +9,7 @@
 .color-gris{
     color:#F4F5F7;
 }
-/*TYPOGRAFIA*/
-span{
+    span{
     font-size: 5.6rem;
     font-family: "Open Sans", "Helvetica", Arial, sans-serif;
     font-weight: bold;
@@ -36,12 +36,9 @@ h6{
     font-size: 15px;
     line-height: 130%;
     }
-
-/*HOME*/
-body{
-    text-align: center;
 }
-ul{
+#portada{
+    ul{
 padding: 0 250px;
     li{
         color:#9B9FA5;
@@ -57,6 +54,7 @@ padding: 0 250px;
     li:first-child{
             list-style: none
     }
+}
 }
 @mixin imagenes($background-image, $height) {
     padding: 20px;
@@ -85,10 +83,7 @@ padding: 0 250px;
 .banneraside{
     @include imagenes(url(../image/banner-aside-home.jpg) ,720px);
 }
-.col-md-8, .col-md-5{
-    padding: 20px;
 
-}
 #columnist{
     img{
         width: 100%;
@@ -96,7 +91,6 @@ padding: 0 250px;
     }
 }
 #noticias{
-
     text-align: left;
     ul{
         padding: 0px;
@@ -132,6 +126,7 @@ padding: 0 250px;
 }
 .portada{
     padding:0px 0px 10px 0px;
+
 }
 
 #port{

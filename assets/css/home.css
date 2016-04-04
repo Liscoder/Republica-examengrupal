@@ -1,51 +1,40 @@
-/*VARIABLES*/
-.color-red {
-  color: #8C0000; }
-
-.color-red2 {
-  color: #C00101; }
-
-.color-gris {
-  color: #F4F5F7; }
-
-/*TYPOGRAFIA*/
-span {
-  font-size: 5.6rem;
-  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-h4 {
-  font-family: "Open Sans", "Helvetica", Arial, sans-serif; }
-
-h5 {
-  font-size: 14px;
-  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
-  font-weight: bold; }
-
-h3 {
-  font: bold 37px "PT Sans", "Helvetica", Arial, sans-serif; }
-
-h6 {
-  font-family: "PT Sans","Helvetica",Arial,sans-serif;
-  font-size: 15px;
-  line-height: 130%; }
-
-/*HOME*/
-body {
+#home {
   text-align: center; }
+  #home .color-red {
+    color: #8C0000; }
+  #home .color-red2 {
+    color: #C00101; }
+  #home .color-gris {
+    color: #F4F5F7; }
+  #home span {
+    font-size: 5.6rem;
+    font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase; }
+  #home h4 {
+    font-family: "Open Sans", "Helvetica", Arial, sans-serif; }
+  #home h5 {
+    font-size: 14px;
+    font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+    font-weight: bold; }
+  #home h3 {
+    font: bold 37px "PT Sans", "Helvetica", Arial, sans-serif; }
+  #home h6 {
+    font-family: "PT Sans","Helvetica",Arial,sans-serif;
+    font-size: 15px;
+    line-height: 130%; }
 
-ul {
+#portada ul {
   padding: 0 250px; }
-  ul li {
+  #portada ul li {
     color: #9B9FA5;
     float: left;
     margin-left: 48px; }
-    ul li a {
+    #portada ul li a {
       font-size: 13px;
       font-weight: bold;
       color: #9B9FA5; }
-  ul li:first-child {
+  #portada ul li:first-child {
     list-style: none; }
 
 .img1 {
@@ -101,9 +90,6 @@ ul {
   color: white;
   background-image: url(../image/banner-aside-home.jpg);
   height: 720px; }
-
-.col-md-8, .col-md-5 {
-  padding: 20px; }
 
 #columnist img {
   width: 100%;
