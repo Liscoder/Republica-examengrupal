@@ -8,7 +8,9 @@ mixin list
                 img(src='assets/image/social_sprite.png')
         li 
             a(href='#' class='comentario')
-                img(src='assets/image/ico_comment.png')
+                p 
+                 img(src='assets/image/ico_comment.png')
+                 | 10
         li 
             a(href='#') ESPECTÁCULOS
         li
@@ -59,10 +61,10 @@ mixin aweita(strong)
                     img(src='assets/image/img_aweita.jpg')
                 .aweitanotice
                     strong Lewis Caarroll:un día como hoy nació el autor de 'Alicia en el'
-mixin titulo(h4)
+mixin titulo(h2)
     .title
         .box-title
-            h4= h4
+            h2= h2
 mixin blog(p)
         .row
             .col-md-4
