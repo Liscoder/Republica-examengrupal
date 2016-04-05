@@ -62,12 +62,20 @@ header {
   font-size: 13px;
   background: #E0E5EC;
   padding: 10px; }
+  .navbar .navdos li a {
+    text-decoration: none;
+    color: grey; }
+  .navbar .navdos .fa.fa-circle {
+    font-size: 6px;
+    vertical-align: middle;
+    padding-right: 7px; }
   .navbar .navdos .temas {
+    padding: 11px;
     background: black;
-    padding: 10px;
     border-radius: 5px;
-    padding-left: 10px; }
-    .navbar .navdos .temas a {
+    padding-left: 10px;
+    margin-left: -15px; }
+    .navbar .navdos .temas li a {
       text-decoration: none;
       color: white; }
 
@@ -114,7 +122,8 @@ header {
   .dos .col-md-5 .gustavo h3 {
     font-size: 14px; }
   .dos .col-md-5 .gustavo p {
-    font-size: 12px; }
+    font-size: 12px;
+    font-style: Italic; }
   .dos .col-md-5 .gustavo .author {
     position: absolute;
     margin-top: -72px;

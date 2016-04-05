@@ -80,6 +80,9 @@ header{
 		}
 	}
   }
+ .dos{
+
+ }
 }
 .navbar{
  	.nav{
@@ -87,11 +90,11 @@ header{
  		font-size:12px;
  		padding:4px 0px;
  		border-radius:5px;
- 		border:1px solid red;
+ 		border:1px solid red; 
  		li{
- 		border-right: 1px solid black;
+ 		border-right: 1px solid black;	
  		}
-
+ 				
  		a{
  			color:white;
  			text-decoration:none;
@@ -102,16 +105,30 @@ header{
  		font-size:13px;
  		background:#E0E5EC;
  		padding:10px;
+ 		li{
+ 			a{
+ 				text-decoration:none;
+ 				color:grey;
+ 			}
+ 		}
+ 		.fa.fa-circle{
+ 			font-size:6px;
+ 			vertical-align:middle;
+ 			padding-right: 7px;
+ 		}
+
  		.temas{
+ 			padding:11px;
  			background: black;
-    		padding: 10px;
     		border-radius:5px;
     		padding-left: 10px;
-
+    		margin-left: -15px;
+    		li{
     		a{
     			text-decoration:none;
     			color:white;
-    		}
+    		}	
+    		}	
  		}
  	}
  }
@@ -120,7 +137,7 @@ header{
  		.nacionalismo{
  			text-align:center;
  			color:#474747;
- 			font-weight:bolder;
+ 			font-weight:bolder; 
  			span{
  				font-size:14px;
  				background:#3D4457;
@@ -132,7 +149,7 @@ header{
  				margin-left: -95px;
  			}
  			.league{
-
+ 				
  				margin:auto;
  				margin-top: -23px;
 
@@ -146,7 +163,7 @@ header{
  				font-weight:bolder;
  			}
 
-
+ 			
  		}
  	}
  	.col-md-5{
@@ -176,6 +193,7 @@ header{
  			}
  			p{
  				font-size:12px;
+ 				font-style: Italic;
  			}
  			.author{
  				position:absolute;
@@ -185,6 +203,7 @@ header{
  			}
  		}
  	}
+
  }
  	.banner2{
 	width:100%;
